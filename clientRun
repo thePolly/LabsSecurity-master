@@ -1,0 +1,7 @@
+java -jar -Djavax.net.ssl.trustStore=/home/sergei/Laba1/target/examplestore
+-Djavax.net.ssl.trustStorePassword=javajava Laba1-1.0-SNAPSHOT.jar
+--proxy 127.0.0.1 --proxyPort 10000 --server 127.0.0.1 --serverPort 10009 --image a.png
+
+
+
+ java -jar -Djavax.net.ssl.keyStore=keystore -Djavax.net.ssl.keyStorePassword=javajava Laba1Server-1.0-SNAPSHOT.jar

@@ -1,0 +1,1 @@
+java -jar -Djavax.net.ssl.keyStore=/home/sergei/Laba1/target/examplestore -Djavax.net.ssl.keyStorePassword=javajava Laba1Server-1.0-SNAPSHOT.jar
