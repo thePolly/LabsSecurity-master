@@ -8,6 +8,7 @@ import javax.net.ssl.SSLSocketFactory;
 import java.awt.image.BufferedImage;
 import java.io.BufferedInputStream;
 import java.io.DataInputStream;
+import java.io.File;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -54,6 +55,9 @@ public class SocketProxyImpl implements SocketProxy {
             //serverInfo = id.readUTF();
             BufferedInputStream i = new BufferedInputStream(socket.getInputStream());
             image = ImageIO.read(ImageIO.createImageInputStream(i));
+            File outfile = new File("image.jpg");
+            ImageIO.write(image, "png", outfile);
+
 
         } catch (IOException e) {
             e.printStackTrace();
